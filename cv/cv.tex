@@ -13,6 +13,7 @@
 \geometry{a4paper, textwidth=5.5in, textheight=9in, marginparsep=7pt, marginparwidth=.6in}
 \setlength\parindent{0in}
 \usepackage{hanging}
+\usepackage[none]{hyphenat}
 
 % FONTS
 \usepackage[usenames,dvipsnames]{xcolor}
@@ -41,20 +42,24 @@
 \subsubsectionfont{\mdseries\upshape\large}
 
 % PDF SETUP
-\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Matt Jibson - vita},pdfauthor={Matt Jibson}]{hyperref}
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Matthew William Jibson - vita},pdfauthor={Matt Jibson}]{hyperref}
 \hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue}
 
 \begin{document}
+\sloppy
+
 \reversemarginpar
-{{\huge Matt Jibson}\\[1.5cm]
+{{\huge Matthew William Jibson}\\[1.5cm]
 \parbox{.5\linewidth}{
 1908 Sage Drive\\
-Golden, CO 80401
+Golden, Colorado 80401
 }
 \parbox{.5\linewidth}{
+\begin{flushright}
 \textsc{c}\quad\texttt{303-902-6948}\\
 {\fontspec{Arial Unicode MS}{✉}}\hspace{.26cm}\href{mailto:matt.jibson@gmail.com}{matt.jibson@gmail.com}\\
 \textsc{w}\hspace{.24cm}\href{http://mattjibson.com/}{http://mattjibson.com/}\\
+\end{flushright}
 }
 
 \subsubsection*{Areas of interest}
@@ -70,19 +75,28 @@ Digital synthesis of pipe organs and pianos. I have written a paper on a method 
 \years{2007}\textbf{B.M., Piano Performance}\\
 \emph{Colorado State University.}
 
+\section*{Work Experience}
+
+\years{June 2011-\\present}\textbf{Seagate Technology}\\Sr. Engineer, \emph{Firmware Organization}\\Custom tools and infrastructure support in mostly Python and SQL.\\[.2cm]
+\years{2000-present}\textbf{US Geological Survey}\\Consultant\\Java programs for seismic analysis.\\[.2cm]
+\years{June 2007-\\May 2009}\textbf{Innovative Advertising}\\Primary Developer\\Designed and created an online system for local ad distribution.\\[.2cm]
+\years{May 2008-\\Dec. 2008}\textbf{Seagate Technology}\\Intern, \emph{Firmware Organization}\\Replaced a failing, 3rd-party, business-critical application with a custom tool.\\[.2cm]
+\years{June 2006-\\May 2007}\textbf{Apictura, LLC}\\Intern\\Wrote with JSP and Java EE servlets, networking services, servers, and other programming tasks.\\[.2cm]
+\years{May 2005-\\Jan. 2006}\textbf{SpectraLink}\\Intern\\Wrote Wireshark dissectors in C for propietary wireless protocols.\\[.2cm]
+\years{May 2004-\\Aug. 2004}\textbf{IBM}\\Intern\\Java tool to improve productivity of the printer analysis team.
+
 \section*{Awards}
 
-\years{2007}2$^{nd}$ place in the Colorado State University Senior Design E-days Awards in Electrical Engineering. A dual electronic \amper{} pipe organ was built.\\[.1cm]
+\years{2007}2$^{nd}$ place in the Colorado State University Senior Design E-days Awards in Electrical Engineering. A dual electronic \amper{} pipe organ was built an FPGA, custom windchest, and donated pipes and keyboard.\\[.1cm]
 \years{2006}Wendel Diebel Award from the Colorado State University Music Department for outstanding musicianship.
 
-%\section*{IT \amper{} programming skills}
-%Markup languages (XHTML, CSS, XML, JSON).\\[.1cm]
-%Scripting languages (PHP, Python, shell script, JavaScript).\\[.1cm]
-%Compiled languages (C, C++, Java).\\[.1cm]
-%Query languages (SQL).\\[.1cm]
-%Data analysis (MATLAB).\\[.1cm]
-%Revision control (Git, CVS, Subversion).\\[.1cm]
-%Digital typesetting ({\fontspec{Times New Roman}\LaTeX}).
+\section*{Software Development}
+
+\years{2000-present}\href{https://github.com/mjibson/slammer}{SLAMMER}\\\emph{Programs for seismic analysis in Java} (primary developer).\\[.2cm]
+\years{Sep. 2011-\\present}\href{http://www.journalr.org/}{Journalr}\\\emph{A website for online, modern journaling in Python and Google App Engine} (founder and developer).\\[.2cm]
+\years{2009-2010}\href{https://github.com/mjibson/missao-rio}{Mission Office}\\\emph{A system and website for management, automated statistics, and office work of a medium-sized, distributed organization in Python and Google App Engine} (creator an developer).\\[.2cm]
+\years{2007-2009}\href{https://github.com/mjibson/biosensor}{Biosensor}\\\emph{Analysis and graphing system for results of potentiostat expirements in Django} (creator and developer).\\[.2cm]
+\years{2002-2008}\href{https://github.com/mjibson/ci}{Crescent Island}\\\emph{A multiplayer, online game in PHP and MySQL/PostgreSQL} (principal developer).
 
 \section*{Publications}
 
