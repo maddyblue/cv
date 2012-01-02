@@ -1,103 +1,104 @@
-\documentclass[11pt]{article}
-%\usepackage{fullpage}
-\usepackage[left=2cm, right=2cm, top=1.5cm, bottom=1.5cm]{geometry}
-\textheight=9.0in
-\pagestyle{empty}
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
+% From: http://nitens.org/taraborelli/cvtex
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt, a4paper]{article}
+\usepackage{fontspec}
+\usepackage{verbatim,placeins}
+
+% DOCUMENT LAYOUT
+\usepackage{geometry}
+\geometry{a4paper, textwidth=5.5in, textheight=9in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+\usepackage{hanging}
+\usepackage[none]{hyphenat}
+
+% FONTS
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+\setmonofont[Scale=0.7]{Monaco}
+
+% CUSTOM COMMANDS
+\newcommand{\amper}{{\fontspec[Scale=.95]{Linux Libertine O}\selectfont}}
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+
+\usepackage{marginnote}
+\newcommand{\years}[1]{\marginnote{\footnotesize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty}
+\usepackage[normalem]{ulem}
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize}
+\subsubsectionfont{\mdseries\upshape\large}
+
+% PDF SETUP
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Matthew William Jibson - vita},pdfauthor={Matt Jibson}]{hyperref}
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue}
+
 \begin{document}
+\sloppy
 
-\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
-\textbf{Matthew Jibson}  & \\
-1908 Sage Drive  & 303-902-6948 \\
-Golden, CO 80401 & matt.jibson@gmail.com \\
-\end{tabular*}
-\\
-\vspace{0.1in}
-{\large \textbf{Education}}
+\reversemarginpar
+{{\huge Matthew William Jibson}\\[1.0cm]
+\parbox{.5\linewidth}{
+\vspace{\baselineskip}
+1908 Sage Drive\\
+Golden, Colorado 80401
+}
+\parbox{.5\linewidth}{
+\begin{flushright}
+303-902-6948\\
+\href{mailto:matt.jibson@gmail.com}{matt.jibson@gmail.com}\\
+\href{http://mattjibson.com/}{http://mattjibson.com/}\\
+\end{flushright}
+}
 
-	\begin{itemize}
-	\item
-	\begin{tabular*}{6in}{l@{\extracolsep{\fill}}r}
-		\textbf{Colorado State University} & Fort Collins, CO \\
-		M.S., Electrical Engineering, 2009 & \\
-		Research with Dr. Tom Chen: VLSI and biosensors
-	\end{tabular*}
+\section*{Areas of interest}
+Scalabale web applications to solve interesting problems. With the emergence and availability of technologies like BigTable and cloud providers, web applications must be re-engineered with new paradigms. This allows the old applications to run much faster, and new applications to be developed that were before not possible due to technological limitations.
 
-	\item
-	\begin{tabular*}{6in}{l@{\extracolsep{\fill}}r}
-		\textbf{Colorado State University} & Fort Collins, CO \\
-		B.S., Computer Engineering (GPA 3.3), 2007 & \\
-		B.M., Piano Performance, 2007 & \\
-	\end{tabular*}
-	\end{itemize}
+\section*{Education}
 
-{\large \textbf{Work History}}
+\noindent\years{2009}\textbf{M.S., Electrical Engineering}\\
+\emph{Colorado State University, 3.2 GPA.} \\
+{\small \textsc{advisor:} Tom Chen.}\\[.2cm]
+\years{2007}\textbf{B.S., Computer Engineering}\\
+\emph{Colorado State University, 3.3 GPA.}\\[.2cm]
+\years{2007}\textbf{B.M., Piano Performance}\\
+\emph{Colorado State University, 3.3 GPA.}
 
-\begin{itemize}
+\section*{Work Experience}
 
-\item
-	\begin{tabular*}{6in}{l@{\extracolsep{\fill}}r}
-		\textbf{Sr. Engineer \& Intern} & May 2008 -- December 2008 \& June 2011 -- Present\\
-		Seagate Technology & Longmont, CO\\
-	\end{tabular*}
+\years{June 2011-\\present}\textbf{Seagate Technology}\\Senior Engineer, \emph{Firmware Organization}\\Developed custom tools and infrastructure support in mostly Python and SQL.\\[.2cm]
+\years{2000-present}\textbf{US Geological Survey}\\Consultant\\Developed Java programs for seismic landslide analysis.\\[.2cm]
+\years{June 2007-\\May 2009}\textbf{Innovative Advertising}\\Primary Developer\\Designed and created an online system for local ad distribution.\\[.2cm]
+\years{May 2008-\\Dec. 2008}\textbf{Seagate Technology}\\Intern, \emph{Firmware Organization}\\Replaced a failing, 3rd-party, business-critical application with a custom tool.\\[.2cm]
+\years{June 2006-\\May 2007}\textbf{Apictura, LLC}\\Intern\\Wrote with JSP and Java EE servlets, networking services, servers, and other programming tasks.\\[.2cm]
+\years{May 2005-\\Jan. 2006}\textbf{SpectraLink}\\Intern\\Wrote Wireshark dissectors in C for propietary wireless protocols.\\[.2cm]
+\years{May 2004-\\Aug. 2004}\textbf{IBM}\\Intern\\Created a Java tool to improve productivity of the printer analysis team.
 
-	\begin{itemize}
-		\item custom tools and infrastructure development using mostly Python and SQL
-	\end{itemize}
+\section*{Software Development}
 
-\item
-	\begin{tabular*}{6in}{l@{\extracolsep{\fill}}r}
-		\textbf{Intern} & Summer 2006 -- May 2007 \\
-		Apictura, LLC & Boulder, CO\\
-	\end{tabular*}
+\years{2011-present}\href{https://github.com/mjibson/go-dsp}{go-dsp}\\\emph{Digital signal processing library for the Go programming language} (primary developer).\\[.2cm]
+\years{2000-present}\href{https://github.com/mjibson/slammer}{SLAMMER}\\\emph{Programs for seismic landslide analysis in Java} (primary developer).\\[.2cm]
+\years{2011}\href{http://www.journalr.org/}{Journalr}\\\emph{A website for online, modern journaling in Python and Google App Engine} (founder and developer).\\[.2cm]
+\years{2009-2010}\href{https://github.com/mjibson/missao-rio}{Mission Office}\\\emph{A system and website for management, automated statistics, and office work of a medium-sized, distributed organization in Python and Google App Engine} (creator and developer).\\[.2cm]
+\years{2007-2009}\href{https://github.com/mjibson/biosensor}{Biosensor}\\\emph{Analysis and graphing system for results of potentiostat expirements in Django} (creator and developer).\\[.2cm]
+\years{2002-2008}\href{https://github.com/mjibson/ci}{Crescent Island}\\\emph{A multiplayer, online game in PHP and MySQL/PostgreSQL} (principal developer).\\[.2cm]
+\href{http://openbsd.org/}{OpenBSD ports}\\\emph{Submitted and had committed various ports to OpenBSD and FreeBSD}.
 
-	\begin{itemize}
-		\item wrote JSP and Java EE servlets using Tomcat
-		\item managed and tested networking services and servers
-		\item various other tasks to assist developers
-	\end{itemize}
-
-\item
-	\begin{tabular*}{6in}{l@{\extracolsep{\fill}}r}
-		\textbf{Intern} & Summer 2005, Winter break 2005 -- 2006 \\
-		SpectraLink & Boulder, CO\\
-	\end{tabular*}
-
-	\begin{itemize}
-		\item wrote Ethereal dissectors in C for proprietary wireless protocols
-		\item remote logic analyzer control in Perl
-		\item various other tools and features to assist developers
-	\end{itemize}
-
-\item
-	\begin{tabular*}{6in}{l@{\extracolsep{\fill}}r}
-		\textbf{Intern} & Summer 2004\\
-		IBM & Boulder, CO\\
-	\end{tabular*}
-
-	\begin{itemize}
-		\item created a tool in Java to improve productivity of the printer analysis team
-	\end{itemize}
-
-\item
-	\begin{tabular*}{6in}{l@{\extracolsep{\fill}}r}
-		\textbf{Consultant} \\
-	\end{tabular*}
-
-	\begin{itemize}
-		\item Innovative Advertising: primary developer for a Fort Collins startup (June 2007 -- May 2009)
-		\item US Geological Survey: published Java programs for seismic analysis (2000 -- present)
-	\end{itemize}
-\end{itemize}
-
-{\large \textbf{Other Things}}
-
-\begin{itemize}
-	\item Fluent in Portuguese
-	\item Contributions to the OpenBSD ports tree (lilypond, tomcat, smaller things)
-	\item Research in pipe organ synthesis
-\end{itemize}
+\vfill{}
+\begin{center}
+{\scriptsize Last updated: \today\- •\- Typeset in \href{http://nitens.org/taraborelli/latex}{{\fontspec{Times New Roman}\XeTeX}}\\\href{http://mattjibson.com/cv.pdf}{http://mattjibson.com/cv.pdf}}
+\end{center}
 
 \end{document}
