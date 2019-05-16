@@ -12,10 +12,8 @@ RUN apt-get clean && apt-get update && apt-get install -y \
 	wget \
 	--no-install-recommends
 
-RUN curl -kL https://raw.github.com/cstrap/monaco-font/master/install-font-ubuntu.sh | \
-	sed 's/sudo //' > /install-font-ubuntu.sh
-
-RUN bash /install-font-ubuntu.sh http://jorrel.googlepages.com/Monaco_Linux.ttf
+COPY Monaco_Linux.ttf /usr/share/fonts/truetype/custom/
+RUN fc-cache -f -v
 
 # from github.com/mjibson/cv:
 # docker build -t xelatex .
