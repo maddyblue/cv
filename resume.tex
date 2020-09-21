@@ -10,7 +10,7 @@
 
 % DOCUMENT LAYOUT
 \usepackage{geometry}
-\geometry{a4paper, textwidth=5.5in, textheight=9in, marginparsep=7pt, marginparwidth=.6in, top=.8in, bottom=.1in}
+\geometry{a4paper, textwidth=5.5in, textheight=9in, marginparsep=7pt, marginparwidth=.6in, top=.5in, bottom=.1in}
 \setlength\parindent{0in}
 \usepackage{hanging}
 \usepackage[none]{hyphenat}
@@ -50,14 +50,12 @@
 \sloppy
 
 \reversemarginpar
-{{\huge Matt Jibson}\\[0.3cm]
 \parbox{.5\linewidth}{
-\vspace{\baselineskip}
-303-902-6948\\
-\href{mailto:matt.jibson@gmail.com}{matt.jibson@gmail.com}\\
+{\huge Matt Jibson}
 }
 \parbox{.5\linewidth}{
 \begin{flushright}
+\href{mailto:matt.jibson@gmail.com}{matt.jibson@gmail.com}\\
 \href{https://mattjibson.com/}{https://mattjibson.com/}\\
 \href{https://github.com/mjibson}{https://github.com/mjibson}\\
 \end{flushright}
@@ -65,7 +63,8 @@
 
 \section*{Work Experience}
 
-\years{Dec 2015-\\present}\textbf{Cockroach Labs}\\Staff Engineer. \emph{go, sql}\\Automated the finding of hundreds of bugs in CockroachDB using \href{https://www.cockroachlabs.com/blog/sqlsmith-randomized-sql-testing}{SQLsmith} and other randomized testing. Designed and implemented features for CockroachDB including driver protocol, SQL functions and types, distributed CSV import, and Kerberos authentication. Maintainer of \href{https://github.com/lib/pq}{lib/pq}, a Go Postgres client driver.\\[.1cm]
+\years{Aug 2020-\\present}\textbf{Materialize}\\Engineer. \emph{rust, sql}\\\\[.1cm]
+\years{Dec 2015-\\Aug 2020}\textbf{Cockroach Labs}\\Staff Engineer. \emph{go, sql}\\Automated the finding of hundreds of bugs in CockroachDB using \href{https://www.cockroachlabs.com/blog/sqlsmith-randomized-sql-testing}{SQLsmith} and other randomized testing. Designed and implemented features for CockroachDB including driver protocol, SQL functions and types, distributed CSV import, and Kerberos authentication. Maintainer of \href{https://github.com/lib/pq}{lib/pq}, a Go Postgres client driver.\\[.1cm]
 \years{July 2015-\\Nov 2015}\textbf{CoreOS}\\Developer. \emph{go, python, kubernetes, docker}\\Features and maintenance for \href{https://quay.io/}{Quay.io}.\\[.1cm]
 \years{March 2012-\\July 2015}\textbf{Stack Overflow}\\Developer. \emph{go, c\#, javascript, sql-server, angularjs}\\Features and maintenance for Stack Overflow Careers. Internal applications for the SRE team. Primary author of \href{https://github.com/bosun-monitor/bosun}{Bosun}, a Go-based monitoring and alerting system.\\[.1cm]
 \years{June 2011-\\March 2012}\textbf{Seagate Technology}\\Senior Engineer. \emph{python, mysql}\\Wrote and maintained various custom tools and web apps to address or discover internal issues and problems.\\[.1cm]
