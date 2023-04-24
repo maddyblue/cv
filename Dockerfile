@@ -1,15 +1,14 @@
-FROM debian:stretch
+FROM debian:bullseye
 
 RUN apt-get clean && apt-get update && apt-get install -y \
 	ca-certificates \
-	curl \
 	fontconfig \
 	lmodern \
 	texlive-fonts-recommended \
-	texlive-generic-recommended \
 	texlive-xetex \
-	ttf-linux-libertine \
-	wget \
+	texlive-latex-recommended \
+	texlive-plain-generic \
+	fonts-linuxlibertine \
 	--no-install-recommends
 
 COPY Monaco_Linux.ttf /usr/share/fonts/truetype/custom/
